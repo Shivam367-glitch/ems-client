@@ -50,7 +50,7 @@ const EventsPage = () => {
 
             {loading ? (
                 <Loader msg={"Loading events..."}/>
-            ) : events.length === 0 ? (
+            ) : !loading && events.length === 0 ? (
 
                 <div className="card shadow-sm p-5 text-center">
 

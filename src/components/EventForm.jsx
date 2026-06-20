@@ -145,20 +145,6 @@ const EventForm = ({ initialData, eventId }) => {
         )}
       </div>
 
-      <div className="mb-3">
-        <label className="form-label">Venue</label>
-        <input
-          type="text"
-          className={`form-control ${errors.venue ? "is-invalid" : ""}`}
-          name="venue"
-          value={formData.venue}
-          onChange={handleChange}
-        />
-        {errors.venue && (
-           <FormError msg={errors.venue}/>
-        )}
-      </div>
-
       <div className="row">
         <div className="col-md-6 mb-3">
           <label className="form-label">Entry Fee</label>
@@ -187,9 +173,24 @@ const EventForm = ({ initialData, eventId }) => {
              <FormError msg={errors.totalSeats}/>
           )}
         </div>
+      </div> 
+
+      <div className="row"> 
+        <div className="mb-3 col-md-6">
+        <label className="form-label">Venue</label>
+        <input
+          type="text"
+          className={`form-control ${errors.venue ? "is-invalid" : ""}`}
+          name="venue"
+          value={formData.venue}
+          onChange={handleChange}
+        />
+        {errors.venue && (
+           <FormError msg={errors.venue}/>
+        )}
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 col-md-6">
         <label className="form-label">Status</label>
         <select
           className={`form-select ${errors.status ? "is-invalid" : ""}`}
@@ -205,6 +206,8 @@ const EventForm = ({ initialData, eventId }) => {
          <FormError msg={errors.status}/>
         )}
       </div>
+      </div>
+
 
       <button
         type="button"
