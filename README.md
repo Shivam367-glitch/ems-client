@@ -1,18 +1,46 @@
-# React + Vite
+# Event Management Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup Instructions
 
-Currently, two official plugins are available:
+### 1. Clone the repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git clone https://github.com/Shivam367-glitch/ems-client
+```
 
-## React Compiler
+### 2. Navigate to the client directory
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+cd client
+```
 
-Note: This will impact Vite dev & build performances.
+### 3. Install dependencies
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 4. Create a `.env` file in the project root
+
+```env
+VITE_BASE_URL=BACKEND_URL/api/events
+```
+
+> Replace the URL with your backend  URL.
+
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+
+### 6. Open the application
+
+Visit the following URL in your browser:
+
+```
+http://localhost:5173
+```
+
