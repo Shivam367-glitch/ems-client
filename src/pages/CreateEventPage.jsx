@@ -4,7 +4,7 @@ import EventForm from "../components/EventForm";
 const CreateEventPage = () => {
     return (
         <> 
-            <div className="container my- py-4  d-flex justify-content-center">
+            <div className="container d-flex justify-content-center mt-4 pb-3">
 
                 <div className="card shadow p-4 col-lg-6">
 
